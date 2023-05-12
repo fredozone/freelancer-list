@@ -12,16 +12,25 @@
         <form id="myForm">
             <div class="display-row">
                 <div class="display-column">
-                    <label>Name</label>
+                    <div class="label-info justify-center">
+                        <label>Name</label>
+                        <label class="validationError error-hidden" id="nameValidation"></label>
+                    </div>
                     <input type="text" name="name" id="name" onkeypress="return onlyLetterandSpaceKey(event)">
                 </div>
                 <div class="display-column">
-                    <label>Year of experience</label>
+                    <div class="label-info justify-center">
+                        <label id="Year">Year of experience</label>
+                        <label class="validationError error-hidden" id="yearValidation"></label>
+                    </div>
                     <input type="text" name="age" id="age" onkeypress="return onlyNumberKey(event)">
                 </div>
                 <div class="display-column">
-                    <label>Ocupation</label>
-                    <input type="text" name="ocupation" id="ocupation" onkeypress="return onlyLetterKey(event)">
+                    <div class="label-info justify-center">
+                        <label>Occupation</label>
+                        <label class="validationError error-hidden" id="OccupationValidation"></label>
+                    </div>
+                    <input type="text" name="occupation" id="occupation" onkeypress="return onlyLetterKey(event)">
                 </div>
             </div>
             <input type="button" class="button-insert" value="Insert" onclick="validationInput();">
