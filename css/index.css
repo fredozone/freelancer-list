@@ -51,10 +51,37 @@ input::placeholder {
     border: 2px solid var(--red);
 }
 
+.label-info{
+    display: flex;
+    flex-direction: column;
+    height: 38px;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.error-hidden{
+    display: none;
+}
+.validationError{
+    height: 18px;
+}
+
+.number:after{
+    content: "Only Numbers are allowed";
+    color: red;
+}
+
+.requiredText:after{
+    content: "Required";
+    color: red;
+}
+
 label {
     white-space: pre-wrap;
     width: inherit;
-    padding-left: 8px;
 }
 
 .button-insert{
