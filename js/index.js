@@ -1,12 +1,12 @@
 let users = [
-    { name : "Jogn", age : 25, ocupation: "Gardener"},
-    { name : "Lenny",  age : 51, ocupation: "Programmer"},
-    { name : "Andrew",  age : 43, ocupation: "Teacher"},
-    { name : "Peter",  age : 81, ocupation: "Teacher"},
-    { name : "Anna",  age : 43, ocupation: "Teacher"},
-    { name : "Albert",  age : 76, ocupation: "Programmer"},
-    { name : "Adam",  age : 47, ocupation: "Teacher"},
-    { name : "Robert",  age : 72, ocupation: "Driver"},
+    { name : "Jogn", age : 25, occupation: "Gardener"},
+    { name : "Lenny",  age : 51, occupation: "Programmer"},
+    { name : "Andrew",  age : 43, occupation: "Teacher"},
+    { name : "Peter",  age : 81, occupation: "Teacher"},
+    { name : "Anna",  age : 43, occupation: "Teacher"},
+    { name : "Albert",  age : 76, occupation: "Programmer"},
+    { name : "Adam",  age : 47, occupation: "Teacher"},
+    { name : "Robert",  age : 72, occupation: "Driver"},
 ];
 
 //VALIDATION
@@ -458,7 +458,7 @@ function main(){
     const body = document.getElementById("bodyId");
     const titleName = document.createElement('h1');
     body.before(titleName);
-    titleName.innerHTML = "FRELANCERS";
+    titleName.innerHTML = "FREELANCERS";
 
     // divRoot.appendChild(titleName);
     // inserting inside the DivRoot
