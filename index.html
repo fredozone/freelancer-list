@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Forum</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="bodyId">
+    <div>
+        <form id="myForm">
+            <div class="display-row">
+                <div class="display-column">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" onkeypress="return onlyLetterandSpaceKey(event)">
+                </div>
+                <div class="display-column">
+                    <label>Year of experience</label>
+                    <input type="text" name="age" id="age" onkeypress="return onlyNumberKey(event)">
+                </div>
+                <div class="display-column">
+                    <label>Ocupation</label>
+                    <input type="text" name="ocupation" id="ocupation" onkeypress="return onlyLetterKey(event)">
+                </div>
+            </div>
+            <input type="button" class="button-insert" value="Insert" onclick="validationInput();">
+        </form>
+    </div>
+    <div id="root">
+
+    </div>
+<script src="js/index.js"></script>
+</body>
+</html>
