@@ -1,44 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/iconBlack300.svg" />
+    <link rel="apple-touch-icon" href="images/iconBlack300.svg" />
+    <link rel="icon" sizes="192x192" href="images/iconBlack300.svg" />
     <title>Freelancer Forum</title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body id="bodyId">
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body id="bodyId">
     <div>
-        <form id="myForm">
-            <div class="display-row">
-                <div class="display-column">
-                    <div class="label-info justify-center">
-                        <label>Name</label>
-                        <label class="validationError error-hidden" id="nameValidation"></label>
-                    </div>
-                    <input type="text" name="name" id="name" onkeypress="return onlyLetterandSpaceKey(event)">
-                </div>
-                <div class="display-column">
-                    <div class="label-info justify-center">
-                        <label id="Year">Year of experience</label>
-                        <label class="validationError error-hidden" id="yearValidation"></label>
-                    </div>
-                    <input type="text" name="age" id="age" onkeypress="return onlyNumberKey(event)">
-                </div>
-                <div class="display-column">
-                    <div class="label-info justify-center">
-                        <label>Occupation</label>
-                        <label class="validationError error-hidden" id="OccupationValidation"></label>
-                    </div>
-                    <input type="text" name="occupation" id="occupation" onkeypress="return onlyLetterKey(event)">
-                </div>
+      <form id="myForm">
+        <div class="display-row">
+          <div class="display-column">
+            <div class="label-info justify-center">
+              <label>Name</label>
+              <label
+                class="validationError error-hidden"
+                id="nameValidation"
+              ></label>
             </div>
-            <input type="button" class="button-insert" value="Insert" onclick="validationInput();">
-        </form>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              onkeypress="return onlyLetterandSpaceKey(event)"
+            />
+          </div>
+          <div class="display-column">
+            <div class="label-info justify-center">
+              <label id="Year">Year of experience</label>
+              <label
+                class="validationError error-hidden"
+                id="yearValidation"
+              ></label>
+            </div>
+            <input
+              type="text"
+              name="age"
+              id="age"
+              onkeypress="return onlyNumberKey(event)"
+            />
+          </div>
+          <div class="display-column">
+            <div class="label-info justify-center">
+              <label>Occupation</label>
+              <label
+                class="validationError error-hidden"
+                id="OccupationValidation"
+              ></label>
+            </div>
+            <input
+              type="text"
+              name="occupation"
+              id="occupation"
+              onkeypress="return onlyLetterKey(event)"
+            />
+          </div>
+        </div>
+        <input
+          type="button"
+          class="button-insert"
+          value="Insert"
+          onclick="validationInput();"
+        />
+      </form>
     </div>
-    <div id="root">
-
-    </div>
-<script src="js/index.js"></script>
-</body>
+    <div id="root"></div>
+    <script src="js/index.js"></script>
+  </body>
 </html>
